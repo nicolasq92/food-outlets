@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import { Button, Card } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import './Card.scss';
 
 function CardComponent(props) {
@@ -14,7 +14,7 @@ function CardComponent(props) {
     },[]);
 
     console.log(props.card)
-    const {city, name, user_rating } = props.card;
+    const { name, user_rating } = props.card;
   return (
     <div className="card-container">
         <Card style={{ width: '18rem' }}>
